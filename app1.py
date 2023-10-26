@@ -12,6 +12,10 @@ app =Flask(__name__)
 def welcom():
     return render_template("index.html")
 
+@app.route('/bace')
+def bace():
+    return render_template("bace.html", title="Python course")
+
 @app.route("/context")
 def context():
     context = {
